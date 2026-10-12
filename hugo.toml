@@ -11,6 +11,21 @@ copyright = '&copy; Resilient ROI Ltd. | London, UK'
 [markup.goldmark.renderer]
   unsafe = true
 
+[[menu.main]]
+  name = 'DBJ Method'
+  url = 'https://method.dbj.org/'
+  weight = 1
+
+[[menu.main]]
+  name = 'Guide'
+  url = 'https://guide.dbj.org/'
+  weight = 2
+
+[[menu.main]]
+  name = 'Iceberg'
+  url = 'https://iceberg.dbj.org/'
+  weight = 3
+
 [params]
   title = 'Resilient ROI'
   description = 'AI Aligned Production Systems'
