@@ -25,31 +25,26 @@
 
 #hero p.hero-content {
     font-size: clamp(16px, 1.4vw, 22px) !important;
-    max-width: 760px !important;
+    max-width: 1000px !important;
+}
+
+#hero .col-lg-4,
+#hero .col-lg-8 {
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+}
+
+#hero .image {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    max-width: 1000px !important;
+    padding: 2rem 0 0 !important;
+    margin: 0 auto !important;
 }
 
 #hero .image img {
     width: 100% !important;
     max-width: none !important;
-}
-
-@media (min-width: 992px) {
-    #hero .col-lg-4 {
-        flex: 0 0 auto !important;
-        width: 46% !important;
-        max-width: 46% !important;
-    }
-
-    #hero .col-lg-8 {
-        flex: 0 0 auto !important;
-        width: 54% !important;
-        max-width: 54% !important;
-    }
-
-    #hero .image {
-        flex: 0 0 auto !important;
-        width: 100% !important;
-        max-width: none !important;
-        padding: 0 !important;
-    }
 }
