@@ -1,0 +1,15 @@
+#projects .card:has(.card-img-top[src="/iceberg-grey.png"]) {
+  display: flex;
+  flex-direction: column;
+}
+
+#projects .card:has(.card-img-top[src="/iceberg-grey.png"]) .card-head {
+  order: 2;
+}
+
+#projects .card-img-top[src="/iceberg-grey.png"] {
+  width: 128px;
+  max-width: 128px;
+  margin: 1rem auto;
+  display: block;
+}

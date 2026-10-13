@@ -62,7 +62,7 @@ copyright = '&copy; Resilient ROI Ltd. | London, UK'
     title = 'Resilient ROI'
     subtitle = 'In the AI Arena'
     content = '''Work is measured by what it returns. We train the whole organisation to cruise at the AI speed.'''
-    image = '/rroi-logo-version.png'
+    image = '/lady_architect_whiteboard.png'
     [params.hero.button]
       enable = true
       name = 'What We Do'
@@ -79,7 +79,7 @@ copyright = '&copy; Resilient ROI Ltd. | London, UK'
       content = 'Raising your crews maturity, from boarding to following the operating model. The result is a steady stream of AI-enabled products or services, all resilient, safe and compliant.'
       [params.projects.items.featured]
         name = 'Read more'
-        link = 'https://method.dbj.org/cmm/index.html'
+        link = 'https://method.dbj.org/'
     [[params.projects.items]]
       title = 'Preservation'
       content = 'Every mature organization, reaches the point when business value it encapsulates is more valuable than software it has built or uses. Your old systems hold years of business knowledge. We enable your teams to take it out and keep it safe before anything is replaced, so modernisation does not throw it away with the old code.'
@@ -91,16 +91,17 @@ copyright = '&copy; Resilient ROI Ltd. | London, UK'
       content = 'For architecture practices developing a method based on ours. Only the parts of the DBJ Method they need, one chapter at a time. We encapsulated TOGAF so that any specific role distant to architecture sees benefits, not confusion.'
       [params.projects.items.featured]
         name = 'Read more'
-        link = 'https://method.dbj.org/'
+        link = 'https://guide.dbj.org/'
     [[params.projects.items]]
-      title = 'Assessment'
+      title = 'Onboarding'
       content = 'Organizations Key Performance Indicator is the sum of capabilities and maturities of its people. That is the key, for adopters, to enter the new operating model and mitigate the risks at the presence of the AI storm. They learn to decide where their organisation stands today, and what it takes to reach the organization level, where work at AI speeds can safely start. The ROI follows.'
       [params.projects.items.featured]
         name = 'Read more'
         link = 'https://method.dbj.org/cmm/index.html'
     [[params.projects.items]]
-      title = 'Client Feedback'
-      content = 'Most customers suffer the technical debt. They quickly spot where Resilient ROI earn their money. Not by demanding poor engineers clear every debt first, but by telling business leaders which debts they can live with, and for how long, which one kills the AI investment, and what it will actually cost to service the rest of the company landscape. — Dusan Jovanovic, Founder'
+      title = 'State of the Industry'
+      content = 'Most customers suffer the technical debt. And they quickly spot where Resilient ROI earn their money. Not by demanding poor engineers to clear every debt first, but by telling business leaders which debts they can live with, and for how long, which one kills the AI investment, and what it will actually cost to service the rest of the company landscape. — Dusan Jovanovic, EA, Founder'
+      image = '/iceberg-grey.png'
 
   [params.contact]
     enable = true
