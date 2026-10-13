@@ -10,3 +10,46 @@
 #hero .row {
     align-items: center;
 }
+
+#hero .subtitle {
+    font-size: clamp(16px, 1.6vw, 22px) !important;
+}
+
+#hero h1 {
+    font-size: clamp(48px, 7vw, 110px) !important;
+}
+
+#hero h2 {
+    font-size: clamp(32px, 5vw, 72px) !important;
+}
+
+#hero p.hero-content {
+    font-size: clamp(16px, 1.4vw, 22px) !important;
+    max-width: 760px !important;
+}
+
+#hero .image img {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+@media (min-width: 992px) {
+    #hero .col-lg-4 {
+        flex: 0 0 auto !important;
+        width: 46% !important;
+        max-width: 46% !important;
+    }
+
+    #hero .col-lg-8 {
+        flex: 0 0 auto !important;
+        width: 54% !important;
+        max-width: 54% !important;
+    }
+
+    #hero .image {
+        flex: 0 0 auto !important;
+        width: 100% !important;
+        max-width: none !important;
+        padding: 0 !important;
+    }
+}
