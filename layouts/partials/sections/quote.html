@@ -1,0 +1,16 @@
+{{- /* Founder quote as its own full-width panel, set in hugo.toml under [params.quote]. */ -}}
+{{ with .Site.Params.quote }}
+<section id="quote" aria-labelledby="quote-title">
+    <div class="quote-inner">
+        {{ with .image }}
+        {{- $size := imageConfig (path.Join "static" .) }}
+        <img class="quote-image" src="{{ . }}" alt="{{ $.Site.Params.quote.imageAlt }}" width="{{ $size.Width }}" height="{{ $size.Height }}" loading="lazy">
+        {{ end }}
+        <figure class="quote-body">
+            <h2 id="quote-title" class="quote-title">{{ .title }}</h2>
+            <blockquote class="quote-text"><p>{{ .text }}</p></blockquote>
+            <figcaption class="quote-author">{{ .author }}<br><span class="quote-role">{{ .role }}</span></figcaption>
+        </figure>
+    </div>
+</section>
+{{ end }}
