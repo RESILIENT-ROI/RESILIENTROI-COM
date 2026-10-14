@@ -33,22 +33,6 @@ copyright = '&copy; Resilient ROI Ltd. | London, UK'
   useBootstrapCDN = false
   animate = true
 
-  # Apple-style neutrals with a single blue accent; every text colour clears 4.5:1 on its background.
-  [params.color]
-    textColor = '#1d1d1f'
-    secondaryTextColor = '#6e6e73'
-    textLinkColor = '#0066cc'
-    backgroundColor = '#ffffff'
-    primaryColor = '#0066cc'
-    secondaryColor = '#f5f5f7'
-    [params.color.darkmode]
-      textColor = '#f5f5f7'
-      secondaryTextColor = '#a1a1a6'
-      textLinkColor = '#2997ff'
-      backgroundColor = '#000000'
-      primaryColor = '#2997ff'
-      secondaryColor = '#1d1d1f'
-
   [params.font]
     fontSize = '1rem'
     fontWeight = 400
@@ -74,19 +58,16 @@ copyright = '&copy; Resilient ROI Ltd. | London, UK'
 
   [params.hero]
     enable = true
-    title = 'Resilient ROI.'
-    titleSecond = 'Solving the legacy in the age of AI.'
-    content = '''Work is measured by what it returns. Your old systems hold years of business knowledge. We help your teams keep it safe and carry it into the AI Arena.'''
-    image = '/lady_architect_whiteboard.webp'
-    imageAlt = 'Black-and-white image of an architect in a boardroom, pointing at a screen that reads: Do this, for this reason, and here is the price of getting it wrong.'
+    intro = ' '
+    title = 'Resilient ROI'
+    subtitle = 'In the AI Arena'
+    content = '''Work is measured by what it returns. We train the whole organisation to cruise at the AI speed.'''
+    image = '/lady_architect_whiteboard.png'
     [params.hero.button]
       enable = true
-      name = 'What we do'
+      name = 'What We Do'
       url = '#projects'
       newPage = false
-    [params.hero.secondaryLink]
-      name = 'Write to us'
-      url = '#contact'
     [params.hero.bottomImage]
       enable = false
 
@@ -95,37 +76,32 @@ copyright = '&copy; Resilient ROI Ltd. | London, UK'
     title = 'We Navigate'
     [[params.projects.items]]
       title = 'Enablement'
-      content = '''Raising your crew's maturity, from boarding to following the operating model. The result is a steady stream of AI-enabled products or services, all resilient, safe and compliant.'''
+      content = 'Raising your crews maturity, from boarding to following the operating model. The result is a steady stream of AI-enabled products or services, all resilient, safe and compliant.'
       [params.projects.items.featured]
-        name = 'The DBJ Method'
+        name = 'Read more'
         link = 'https://method.dbj.org/'
     [[params.projects.items]]
       title = 'Preservation'
-      content = 'Every mature organisation reaches the point where the business value it encapsulates is worth more than the software it has built or uses. Your old systems hold years of business knowledge. We enable your teams to take it out and keep it safe before anything is replaced, so modernisation does not throw it away with the old code.'
+      content = 'Every mature organization, reaches the point when business value it encapsulates is more valuable than software it has built or uses. Your old systems hold years of business knowledge. We enable your teams to take it out and keep it safe before anything is replaced, so modernisation does not throw it away with the old code.'
       [params.projects.items.featured]
-        name = 'Technical debt on Iceberg'
+        name = 'Read more'
         link = 'https://iceberg.dbj.org/kb/technical-debt/'
     [[params.projects.items]]
       title = 'Building'
-      content = 'For architecture practices developing a method based on ours. Only the parts of the DBJ Method they need, one chapter at a time. We encapsulated TOGAF so that any role distant from architecture sees benefits, not confusion.'
+      content = 'For architecture practices developing a method based on ours. Only the parts of the DBJ Method they need, one chapter at a time. We encapsulated TOGAF so that any specific role distant to architecture sees benefits, not confusion.'
       [params.projects.items.featured]
-        name = 'The Guide'
+        name = 'Read more'
         link = 'https://guide.dbj.org/'
     [[params.projects.items]]
       title = 'Onboarding'
-      content = '''An organisation's key performance indicator is the sum of its people's capabilities and maturity. That is the key for adopters to enter the new operating model and mitigate the risks of the AI storm. They learn to decide where their organisation stands today, and what it takes to reach the organisation level, where work at AI speed can safely start. The ROI follows.'''
+      content = 'Organizations Key Performance Indicator is the sum of capabilities and maturities of its people. That is the key, for adopters, to enter the new operating model and mitigate the risks at the presence of the AI storm. They learn to decide where their organisation stands today, and what it takes to reach the organization level, where work at AI speeds can safely start. The ROI follows.'
       [params.projects.items.featured]
-        name = 'The maturity model'
+        name = 'Read more'
         link = 'https://method.dbj.org/cmm/index.html'
-
-  # Founder quote, shown as its own panel after the services (layouts/partials/sections/quote.html).
-  [params.quote]
-    title = 'State of the Industry'
-    text = 'Most customers suffer the technical debt. And they quickly spot where Resilient ROI earn their money. Not by demanding poor engineers to clear every debt first, but by telling business leaders which debts they can live with, and for how long, which one kills the AI investment, and what it will actually cost to service the rest of the company landscape.'
-    author = 'Dusan Jovanovic'
-    role = 'EA, Founder'
-    image = '/iceberg-grey.webp'
-    imageAlt = '''Cartoon iceberg. Above the waterline: AI strategy, with a boat whose crew says "AI will transform us!" and "Let's move fast!". Below it: legacy systems, data pipelines, integration debt and no documentation, with a second boat saying "We're still fixing the foundation..." and a submarine at the base.'''
+    [[params.projects.items]]
+      title = 'State of the Industry'
+      content = 'Most customers suffer the technical debt. And they quickly spot where Resilient ROI earn their money. Not by demanding poor engineers to clear every debt first, but by telling business leaders which debts they can live with, and for how long, which one kills the AI investment, and what it will actually cost to service the rest of the company landscape. — Dusan Jovanovic, EA, Founder'
+      image = '/iceberg-grey.png'
 
   [params.contact]
     enable = true

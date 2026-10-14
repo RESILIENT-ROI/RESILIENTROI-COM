@@ -1,124 +1,15 @@
-/* Hero for layouts/partials/sections/hero/index.html: one idea, centred, then the image as its own panel. */
-
-#hero {
-    min-height: auto;
-    max-width: 100%;
-    padding: clamp(3rem, 9vw, 7rem) 1.5rem clamp(3rem, 6vw, 5rem);
-    line-height: normal;
-    text-align: center;
+#projects .card:has(.card-img-top[src="/iceberg-grey.png"]) {
+  display: flex;
+  flex-direction: column;
 }
 
-#hero .hero-text {
-    max-width: 980px;
-    margin: 0 auto;
+#projects .card:has(.card-img-top[src="/iceberg-grey.png"]) .card-head {
+  order: 2;
 }
 
-/* The id selector outranks the theme's `#hero h1 { color: var(--primary-color) !important }`. */
-#hero h1#hero-title {
-    margin: 0;
-    font-size: clamp(2.25rem, 6.4vw, 5.5rem);
-    font-weight: 700;
-    line-height: 1.05;
-    letter-spacing: -0.03em;
-    color: var(--text-color) !important;
-}
-
-#hero .hero-title-second {
-    display: block;
-    color: var(--text-secondary-color);
-}
-
-#hero .hero-lead {
-    max-width: 40rem;
-    margin: 1.75rem auto 0;
-    font-size: clamp(1.1875rem, 1.9vw, 1.5rem);
-    line-height: 1.45;
-    letter-spacing: -0.015em;
-    color: var(--text-color);
-    opacity: 1;
-    text-wrap: pretty;
-}
-
-#hero .hero-slogan {
-    max-width: 40rem;
-    margin: 1rem auto 0;
-    font-size: 1.0625rem;
-    line-height: 1.5;
-    color: var(--text-secondary-color);
-    opacity: 1;
-    text-wrap: balance;
-}
-
-#hero .hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem 2rem;
-    margin-top: 2.25rem;
-}
-
-#hero .hero-btn {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    border-radius: 980px;
-    background-color: var(--primary-color);
-    color: #fff;
-    font-size: 1.0625rem;
-    font-weight: 500;
-    text-decoration: none;
-    transition: background-color 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-/* White on the dark-mode link blue is under 4.5:1, so the dark button uses a deeper blue. */
-.dark #hero .hero-btn {
-    background-color: #0071e3;
-}
-
-#hero .hero-btn:hover {
-    background-color: color-mix(in srgb, var(--primary-color) 88%, #000);
-}
-
-#hero .hero-link {
-    font-size: 1.0625rem;
-    color: var(--text-link-color);
-    text-decoration: none;
-}
-
-#hero .hero-link:hover {
-    text-decoration: underline;
-}
-
-#hero .hero-figure {
-    max-width: 1080px;
-    margin: clamp(3rem, 7vw, 5rem) auto 0;
-}
-
-#hero .hero-figure img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 18px;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    #hero .hero-text,
-    #hero .hero-figure {
-        animation: hero-rise 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
-    }
-
-    #hero .hero-figure {
-        animation-delay: 0.12s;
-    }
-}
-
-@keyframes hero-rise {
-    from {
-        transform: translateY(16px);
-        filter: blur(4px);
-    }
-}
-
-.dark #hero .hero-btn:hover {
-    background-color: color-mix(in srgb, #0071e3 88%, #000);
+#projects .card-img-top[src="/iceberg-grey.png"] {
+  width: 128px;
+  max-width: 128px;
+  margin: 1rem auto;
+  display: block;
 }
