@@ -1,0 +1,165 @@
+/* Instrument Panel design direction — cockpit/control-room visual language */
+
+:root {
+    --ip-line: #2A3A4E;
+    --ip-amber: #E8A33D;
+}
+
+body {
+    font-family: "Roboto", sans-serif !important;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: "Alata", sans-serif !important;
+    letter-spacing: 0.01em;
+}
+
+/* Navbar: thin baseline rule instead of shadow/blur */
+header#profileHeader {
+    border-bottom: 1px solid var(--ip-line);
+}
+
+.navbar-nav .nav-link {
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+}
+
+/* Hero: cockpit split, vertical rule between text and image */
+#hero {
+    position: relative;
+}
+
+#hero .subtitle {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.85rem !important;
+    color: var(--ip-amber) !important;
+}
+
+#hero h1 {
+    letter-spacing: -0.01em;
+}
+
+#hero .col-lg-8.content {
+    border-right: 1px solid var(--ip-line);
+    padding-right: 2.5rem;
+}
+
+@media (max-width: 991px) {
+    #hero .col-lg-8.content {
+        border-right: none;
+        border-bottom: 1px solid var(--ip-line);
+        padding-right: 0;
+        padding-bottom: 2rem;
+    }
+}
+
+#hero .btn {
+    border-radius: 2px;
+    border: 1px solid var(--ip-amber);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.85rem;
+}
+
+/* Section headings: leading tick instead of center-only type */
+#projects h3,
+#contact h3 {
+    text-align: left !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--ip-amber);
+    margin-bottom: 2rem;
+}
+
+/* Project cards: instrument brackets, no shadow, no radius */
+#projects .card {
+    background: var(--secondary-background-color);
+    border: 1px solid var(--ip-line);
+    border-radius: 2px;
+    box-shadow: none;
+    position: relative;
+}
+
+#projects .card::before,
+#projects .card::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-color: var(--ip-amber);
+}
+
+#projects .card::before {
+    top: -1px;
+    left: -1px;
+    border-top: 2px solid var(--ip-amber);
+    border-left: 2px solid var(--ip-amber);
+}
+
+#projects .card::after {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 2px solid var(--ip-amber);
+    border-right: 2px solid var(--ip-amber);
+}
+
+#projects .card-title {
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 0.95rem;
+}
+
+#projects .badge-secondary {
+    border-radius: 2px;
+    border: 1px solid var(--ip-line);
+    background: transparent;
+    color: var(--text-secondary-color);
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.04em;
+}
+
+#projects .btn,
+#contact .btn {
+    border-radius: 2px;
+    border: 1px solid var(--ip-amber);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.8rem;
+}
+
+/* Contact: quiet, instrument-label button */
+#contact {
+    border-top: 1px solid var(--ip-line);
+}
+
+/* One deliberate reveal on load, nothing on scroll/hover beyond border state */
+#hero .content,
+#hero .image {
+    animation: ip-reveal 0.6s ease-out both;
+}
+
+#hero .image {
+    animation-delay: 0.15s;
+}
+
+@keyframes ip-reveal {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #hero .content,
+    #hero .image {
+        animation: none;
+    }
+}
