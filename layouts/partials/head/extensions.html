@@ -1,6 +1,5 @@
-{{ with resources.Get "css/extended/about.css" }}
+{{ range slice "base" "hero" "about" "projects" }}
+{{ with resources.Get (printf "css/extended/%s.css" .) }}
 <link rel="stylesheet" href="{{ .RelPermalink }}" media="all">
 {{ end }}
-{{ with resources.Get "css/extended/hero.css" }}
-<link rel="stylesheet" href="{{ .RelPermalink }}" media="all">
 {{ end }}

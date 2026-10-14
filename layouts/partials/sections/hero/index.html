@@ -1,0 +1,28 @@
+{{- /* Site override of the hugo-profile hero: one headline, one lead, one slogan line, two actions, then the image as its own panel. */ -}}
+{{ if .Site.Params.hero.enable | default false }}
+{{- $hero := .Site.Language.Params.hero | default .Site.Params.hero -}}
+<section id="hero" aria-labelledby="hero-title">
+    <div class="hero-text">
+        <h1 id="hero-title">
+            {{ $hero.title }}
+            {{ with $hero.titleSecond }}<span class="hero-title-second">{{ . }}</span>{{ end }}
+        </h1>
+        {{ with $hero.content }}<p class="hero-lead">{{ . | markdownify }}</p>{{ end }}
+        {{ with $hero.subtitle }}<p class="hero-slogan">{{ . }}</p>{{ end }}
+        <div class="hero-actions">
+            {{ with $hero.button }}{{ if .enable }}
+            <a class="hero-btn" href="{{ .url }}">{{ .name }}</a>
+            {{ end }}{{ end }}
+            {{ with $hero.secondaryLink }}
+            <a class="hero-link" href="{{ .url }}">{{ .name }}<span aria-hidden="true"> ›</span></a>
+            {{ end }}
+        </div>
+    </div>
+    {{ with $hero.image }}
+    <figure class="hero-figure">
+        {{- $size := imageConfig (path.Join "static" .) }}
+        <img src="{{ . }}" alt="{{ $hero.imageAlt }}" width="{{ $size.Width }}" height="{{ $size.Height }}" fetchpriority="high">
+    </figure>
+    {{ end }}
+</section>
+{{ end }}

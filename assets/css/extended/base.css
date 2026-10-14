@@ -1,0 +1,79 @@
+/* Site-wide type, browser surfaces and navigation. Overrides hugo-profile's font.css and header.css. */
+
+:root {
+    --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+}
+
+body,
+.primary-font, #primary-font,
+.secondary-font, #secondary-font,
+.default-font, #default-font {
+    font-family: var(--font-sans) !important;
+}
+
+body {
+    font-optical-sizing: auto;
+    letter-spacing: -0.011em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    letter-spacing: -0.022em;
+    text-wrap: balance;
+}
+
+::selection {
+    background-color: color-mix(in srgb, var(--primary-color) 22%, transparent);
+    color: inherit;
+}
+
+:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+a {
+    text-underline-offset: 0.2em;
+}
+
+/* Navigation: translucent bar with a backdrop blur and a hairline instead of the theme's teal glow. */
+#profileHeader {
+    background-color: color-mix(in srgb, var(--background-color) 78%, transparent);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+#profileHeader.showHeaderOnTop {
+    box-shadow: 0 1px 0 color-mix(in srgb, var(--text-color) 10%, transparent);
+}
+
+#profileHeader .navbar {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem;
+}
+
+#profileHeader .navbar-brand {
+    color: var(--text-color) !important;
+    opacity: 1;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+#profileHeader .navbar-brand img {
+    width: auto;
+    height: 28px;
+}
+
+#profileHeader .navbar-nav a {
+    font-size: 0.875rem;
+    opacity: 0.85;
+}
+
+#profileHeader .navbar-nav a:hover {
+    opacity: 1;
+}
