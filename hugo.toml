@@ -95,25 +95,25 @@ copyright = '&copy; Resilient ROI Ltd. | London, UK'
     title = 'We Navigate'
     [[params.projects.items]]
       title = 'Enablement'
-      content = 'Raising your crews maturity, from boarding to following the operating model. The result is a steady stream of AI-enabled products or services, all resilient, safe and compliant.'
+      content = '''Raising your crew's maturity, from boarding to following the operating model. The result is a steady stream of AI-enabled products or services, all resilient, safe and compliant.'''
       [params.projects.items.featured]
         name = 'The DBJ Method'
         link = 'https://method.dbj.org/'
     [[params.projects.items]]
       title = 'Preservation'
-      content = 'Every mature organization, reaches the point when business value it encapsulates is more valuable than software it has built or uses. Your old systems hold years of business knowledge. We enable your teams to take it out and keep it safe before anything is replaced, so modernisation does not throw it away with the old code.'
+      content = 'Every mature organisation reaches the point where the business value it encapsulates is worth more than the software it has built or uses. Your old systems hold years of business knowledge. We enable your teams to take it out and keep it safe before anything is replaced, so modernisation does not throw it away with the old code.'
       [params.projects.items.featured]
         name = 'Technical debt on Iceberg'
         link = 'https://iceberg.dbj.org/kb/technical-debt/'
     [[params.projects.items]]
       title = 'Building'
-      content = 'For architecture practices developing a method based on ours. Only the parts of the DBJ Method they need, one chapter at a time. We encapsulated TOGAF so that any specific role distant to architecture sees benefits, not confusion.'
+      content = 'For architecture practices developing a method based on ours. Only the parts of the DBJ Method they need, one chapter at a time. We encapsulated TOGAF so that any role distant from architecture sees benefits, not confusion.'
       [params.projects.items.featured]
         name = 'The Guide'
         link = 'https://guide.dbj.org/'
     [[params.projects.items]]
       title = 'Onboarding'
-      content = 'Organizations Key Performance Indicator is the sum of capabilities and maturities of its people. That is the key, for adopters, to enter the new operating model and mitigate the risks at the presence of the AI storm. They learn to decide where their organisation stands today, and what it takes to reach the organization level, where work at AI speeds can safely start. The ROI follows.'
+      content = '''An organisation's key performance indicator is the sum of its people's capabilities and maturity. That is the key for adopters to enter the new operating model and mitigate the risks of the AI storm. They learn to decide where their organisation stands today, and what it takes to reach the organisation level, where work at AI speed can safely start. The ROI follows.'''
       [params.projects.items.featured]
         name = 'The maturity model'
         link = 'https://method.dbj.org/cmm/index.html'
