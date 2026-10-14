@@ -1,0 +1,123 @@
+/* Field Notes design direction — editorial, archival, documentary */
+
+:root {
+    --fn-hairline: #D8D0BE;
+    --fn-ink: #3B4252;
+}
+
+body {
+    font-family: "Lora", serif !important;
+    line-height: 1.7;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: "Lora", serif !important;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+    font-family: "Lora", serif;
+    font-style: italic;
+}
+
+header#profileHeader {
+    border-bottom: 1px solid var(--fn-hairline);
+}
+
+/* Hero: manuscript-style, generous margins, rule beneath like a dateline */
+#hero .subtitle {
+    font-style: italic;
+    color: var(--text-secondary-color) !important;
+}
+
+#hero h1 {
+    font-weight: 600;
+}
+
+#hero p.hero-content {
+    max-width: 640px !important;
+    line-height: 1.75;
+}
+
+#hero {
+    border-bottom: 1px solid var(--fn-hairline);
+    padding-bottom: 2.5rem !important;
+}
+
+#hero .btn {
+    border-radius: 0;
+    border: 1px solid var(--fn-ink);
+    background: transparent;
+    color: var(--fn-ink);
+    font-style: italic;
+}
+
+#hero .btn:hover {
+    background: var(--fn-ink);
+    color: var(--background-color);
+}
+
+#hero .image img {
+    border-radius: 0;
+    border: 1px solid var(--fn-hairline);
+}
+
+/* Section headings: understated, left-aligned, no card chrome */
+#projects h3,
+#contact h3 {
+    text-align: left !important;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+/* Project entries: documentary list, not SaaS cards */
+#projects .card {
+    background: transparent;
+    border: none;
+    border-top: 1px solid var(--fn-hairline);
+    border-radius: 0;
+    box-shadow: none;
+    padding-top: 1.25rem;
+}
+
+#projects .card-img-top {
+    border-radius: 0;
+    border: 1px solid var(--fn-hairline);
+}
+
+#projects .card-title {
+    font-weight: 600;
+}
+
+#projects .card-text {
+    font-family: "Lora", serif;
+}
+
+#projects .badge-secondary {
+    border-radius: 0;
+    background: transparent;
+    border: 1px solid var(--fn-hairline);
+    color: var(--text-secondary-color);
+    font-style: italic;
+    font-family: "Lora", serif;
+}
+
+#projects .btn,
+#contact .btn {
+    border-radius: 0;
+    border: 1px solid var(--fn-ink);
+    background: transparent;
+    color: var(--fn-ink);
+    font-style: italic;
+}
+
+#projects .btn:hover,
+#contact .btn:hover {
+    background: var(--fn-ink);
+    color: var(--background-color);
+}
+
+#contact {
+    border-top: 1px solid var(--fn-hairline);
+}
