@@ -33,6 +33,23 @@ copyright = '&copy; Resilient ROI Ltd. | London, UK'
   useBootstrapCDN = false
   animate = true
 
+  [params.color]
+    textColor = '#1A1A18'
+    secondaryTextColor = '#7A7872'
+    textLinkColor = '#2F4538'
+    backgroundColor = '#FAFAF8'
+    secondaryBackgroundColor = '#F1F0EA'
+    primaryColor = '#2F4538'
+    secondaryColor = '#F1F0EA'
+    [params.color.darkmode]
+      textColor = '#1A1A18'
+      secondaryTextColor = '#7A7872'
+      textLinkColor = '#2F4538'
+      backgroundColor = '#FAFAF8'
+      secondaryBackgroundColor = '#F1F0EA'
+      primaryColor = '#2F4538'
+      secondaryColor = '#F1F0EA'
+
   [params.font]
     fontSize = '1rem'
     fontWeight = 400

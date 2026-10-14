@@ -1,0 +1,111 @@
+/* Quiet Authority design direction — minimal consultancy, calm and unhurried */
+
+:root {
+    --qa-hairline: #E3E1DA;
+    --qa-accent: #2F4538;
+}
+
+body {
+    font-family: "Roboto", sans-serif !important;
+    line-height: 1.7;
+    letter-spacing: 0.005em;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: "Alata", sans-serif !important;
+    font-weight: 400;
+}
+
+header#profileHeader {
+    border-bottom: 1px solid var(--qa-hairline);
+}
+
+/* Hero: wide negative space, no split, no device */
+#hero {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+#hero .subtitle {
+    color: var(--text-secondary-color) !important;
+    font-size: 1rem !important;
+}
+
+#hero h1 {
+    font-weight: 400;
+    letter-spacing: -0.01em;
+}
+
+#hero p.hero-content {
+    max-width: 620px !important;
+    color: var(--text-secondary-color);
+}
+
+#hero .btn {
+    border-radius: 2px;
+    border: 1px solid var(--qa-accent);
+    background: transparent;
+    color: var(--qa-accent);
+    padding: 0.55rem 1.4rem;
+}
+
+#hero .btn:hover {
+    background: var(--qa-accent);
+    color: var(--background-color);
+}
+
+#hero .image img {
+    border-radius: 2px;
+}
+
+/* Section headings: quiet, no eyebrow, generous margin */
+#projects h3,
+#contact h3 {
+    text-align: left !important;
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Project blocks: flat, separated by space not decoration */
+#projects .card {
+    background: transparent;
+    border: 1px solid var(--qa-hairline);
+    border-radius: 2px;
+    box-shadow: none;
+}
+
+#projects .card-img-top {
+    border-radius: 0;
+}
+
+#projects .card-title {
+    font-weight: 500;
+}
+
+#projects .badge-secondary {
+    border-radius: 2px;
+    background: var(--secondary-background-color);
+    border: none;
+    color: var(--text-secondary-color);
+}
+
+#projects .btn,
+#contact .btn {
+    border-radius: 2px;
+    border: 1px solid var(--qa-accent);
+    background: transparent;
+    color: var(--qa-accent);
+}
+
+#projects .btn:hover,
+#contact .btn:hover {
+    background: var(--qa-accent);
+    color: var(--background-color);
+}
+
+#contact {
+    border-top: 1px solid var(--qa-hairline);
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
