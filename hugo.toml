@@ -2,7 +2,7 @@ baseURL = 'https://resilientroi.com/'
 languageCode = 'en-gb'
 title = 'Resilient ROI'
 theme = 'hugo-profile'
-copyright = '&copy; Resilient ROI Ltd. | London, UK'
+copyright = 'Resilient ROI Limited'
 
 [outputs]
   home = ['HTML', 'RSS', 'JSON']
@@ -28,7 +28,7 @@ copyright = '&copy; Resilient ROI Ltd. | London, UK'
 
 [params]
   title = 'Resilient ROI'
-  description = 'AI Aligned Production Systems'
+  description = 'Safety at AI Speed.'
   favicon = '/favicon/favicon.ico'
   useBootstrapCDN = false
   animate = true
@@ -93,32 +93,35 @@ copyright = '&copy; Resilient ROI Ltd. | London, UK'
     title = 'We Navigate'
     [[params.projects.items]]
       title = 'Enablement'
-      content = 'Raising your crews maturity, from boarding to following the operating model. The result is a steady stream of AI-enabled products or services, all resilient, safe and compliant.'
+      content = '''Raising your crew's maturity, from boarding to following the operating model. The result is a steady stream of AI-enabled products or services, all resilient, safe and compliant.'''
       [params.projects.items.featured]
         name = 'Read more'
-        link = 'https://method.dbj.org/'
+        link = '/services/enablement/'
     [[params.projects.items]]
       title = 'Preservation'
-      content = 'Every mature organization, reaches the point when business value it encapsulates is more valuable than software it has built or uses. Your old systems hold years of business knowledge. We enable your teams to take it out and keep it safe before anything is replaced, so modernisation does not throw it away with the old code.'
+      content = 'Every mature organisation reaches the point where the business value it encapsulates is worth more than the software it has built or uses. Your old systems hold years of business knowledge. We enable your teams to take it out and keep it safe before anything is replaced, so modernisation does not throw it away with the old code.'
       [params.projects.items.featured]
         name = 'Read more'
-        link = 'https://iceberg.dbj.org/kb/technical-debt/'
+        link = '/services/preservation/'
     [[params.projects.items]]
       title = 'Building'
-      content = 'For architecture practices developing a method based on ours. Only the parts of the DBJ Method they need, one chapter at a time. We encapsulated TOGAF so that any specific role distant to architecture sees benefits, not confusion.'
+      content = 'For architecture practices developing a method based on ours. Only the parts of the DBJ Method they need, one chapter at a time. We encapsulated TOGAF so that any role distant from architecture sees benefits, not confusion.'
       [params.projects.items.featured]
         name = 'Read more'
-        link = 'https://guide.dbj.org/'
+        link = '/services/building/'
     [[params.projects.items]]
       title = 'Onboarding'
-      content = 'Organizations Key Performance Indicator is the sum of capabilities and maturities of its people. That is the key, for adopters, to enter the new operating model and mitigate the risks at the presence of the AI storm. They learn to decide where their organisation stands today, and what it takes to reach the organization level, where work at AI speeds can safely start. The ROI follows.'
+      content = '''An organisation's key performance indicator is the sum of its people's capabilities and maturity. That is the key for adopters to enter the new operating model and mitigate the risks of the AI storm. They learn to decide where their organisation stands today, and what it takes to reach the level where work at AI speed can safely start. The ROI follows.'''
       [params.projects.items.featured]
         name = 'Read more'
-        link = 'https://method.dbj.org/cmm/index.html'
+        link = '/services/onboarding/'
     [[params.projects.items]]
       title = 'State of the Industry'
       content = 'Most customers suffer the technical debt. And they quickly spot where Resilient ROI earn their money. Not by demanding poor engineers to clear every debt first, but by telling business leaders which debts they can live with, and for how long, which one kills the AI investment, and what it will actually cost to service the rest of the company landscape. — Dusan Jovanovic, EA, Founder'
       image = '/iceberg-grey.png'
+      [params.projects.items.featured]
+        name = 'Read the story'
+        link = '/posts/state-of-the-industry/'
 
   [params.contact]
     enable = true
@@ -151,5 +154,12 @@ The [DBJ Method](https://method.dbj.org/) is not the book of magic.
       enable = true
       content='With us, no project floats outside the [BPT](https://method.dbj.org/bpt/index.html) loop.'
 
+  # Trading disclosure: Company, LLP and Business (Names and Trading Disclosures)
+  # Regulations 2015 (SI 2015/17), regs 24-25, and Electronic Commerce Regulations 2002 reg 6.
+  # The registered office address must also be shown. It is left out until the founders
+  # decide whether to keep the current registered office or change it at Companies House first.
+  [params.company]
+    registration = 'Registered in England and Wales, company number 17415109.'
+
   [params.terms]
-    copyright = 'All rights reserved. Resilient ROI Ltd, London, UK.'
+    copyright = 'All rights reserved.'
