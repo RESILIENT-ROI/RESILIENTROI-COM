@@ -156,10 +156,8 @@ The [DBJ Method](https://method.dbj.org/) is not the book of magic.
 
   # Trading disclosure: Company, LLP and Business (Names and Trading Disclosures)
   # Regulations 2015 (SI 2015/17), regs 24-25, and Electronic Commerce Regulations 2002 reg 6.
-  # The registered office address must also be shown. It is left out until the founders
-  # decide whether to keep the current registered office or change it at Companies House first.
   [params.company]
-    registration = 'Registered in England and Wales, company number 17415109.'
+    registration = 'Registered in England and Wales, company number 17415109. Registered office: 36 Ludlow Avenue, Luton, LU1 3RW.'
 
   [params.terms]
     copyright = 'All rights reserved.'

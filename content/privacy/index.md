@@ -7,7 +7,7 @@ version: 0.1
 
 ## Who we are
 
-Resilient ROI Limited, registered in England and Wales, company number 17415109. For anything about your personal data, write to [info@resilientroi.com](mailto:info@resilientroi.com).
+Resilient ROI Limited, registered in England and Wales, company number 17415109. Registered office: 36 Ludlow Avenue, Luton, LU1 3RW. For anything about your personal data, write to [info@resilientroi.com](mailto:info@resilientroi.com).
 
 ## What this website collects
 
