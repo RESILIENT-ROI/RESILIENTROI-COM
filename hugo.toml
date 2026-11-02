@@ -77,8 +77,8 @@ copyright = '&copy; Resilient ROI Ltd. | London, UK'
     enable = true
     intro = ' '
     title = 'Resilient ROI'
-    subtitle = 'In the AI Arena'
-    content = '''Work is measured by what it returns. We train the whole organisation to cruise at the AI speed.'''
+    subtitle = ''
+    content = '''Work is measured by what it returns.<br>We train the whole organisation to cruise at the AI speed.'''
     image = '/lady_architect_whiteboard.png'
     [params.hero.button]
       enable = true
