@@ -1,0 +1,79 @@
+name: Import Soro articles (PR for review)
+
+# Pulls new articles from the Soro RSS feed and opens one pull request per
+# article. Nothing is published until a human merges the PR; the merge to
+# main triggers deploy.yml as usual.
+#
+# Repo settings needed:
+#   - Variable SORO_FEED_URL  (Settings > Secrets and variables > Actions > Variables)
+#   - Optional variable SORO_AUTHOR (defaults to "Resilient ROI")
+#   - Settings > Actions > General > "Allow GitHub Actions to create and approve pull requests"
+
+on:
+  schedule:
+    - cron: '17 6 * * *'   # daily, 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: soro-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install markdownify==0.13.1
+
+      - name: Import new articles
+        id: import
+        env:
+          FEED: ${{ vars.SORO_FEED_URL }}
+          AUTHOR: ${{ vars.SORO_AUTHOR || 'Resilient ROI' }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          test -n "$FEED" || { echo "::error::Set repo variable SORO_FEED_URL"; exit 1; }
+          # Skip articles that already have an open (or closed-unmerged) import PR
+          SKIP=$(gh pr list --state all --search "head:soro/" --limit 200 \
+                   --json headRefName -q '.[].headRefName' | sed 's#^soro/##' | paste -sd, -)
+          python scripts/soro_import.py "$FEED" --author "$AUTHOR" --skip "$SKIP" > new_slugs.txt
+          cat new_slugs.txt
+
+      - name: Open one PR per article
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name  "soro-import[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          while read -r slug; do
+            [ -n "$slug" ] || continue
+            title=$(sed -n 's/^title: "\(.*\)"$/\1/p' "content/posts/$slug/index.md" | head -1)
+            git switch -q -c "soro/$slug" origin/main
+            git add "content/posts/$slug"
+            git commit -q -m "Soro draft: $title"
+            git push -q origin "soro/$slug"
+            gh pr create --base main --head "soro/$slug" \
+              --title "Soro draft: $title" \
+              --label soro --label review \
+              --body "Imported from Soro. **Merging publishes it to resilientroi.com.**
+
+          Review checklist:
+          - [ ] UK spelling, no promises or marketing claims (see CLAUDE.md)
+          - [ ] Consistent with the DBJ Method; add links to method.dbj.org where useful
+          - [ ] Author and tags correct
+          - [ ] Facts and figures checked
+
+          Close the PR without merging to reject the article; it will not be re-imported." \
+              || gh pr create --base main --head "soro/$slug" \
+                   --title "Soro draft: $title" --body "Imported from Soro. Merging publishes it."
+            git switch -q --detach origin/main
+          done < new_slugs.txt
