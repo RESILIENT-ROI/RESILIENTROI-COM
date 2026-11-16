@@ -96,7 +96,7 @@ copyright = '&copy; Resilient ROI Ltd. | London, UK'
       content = 'Raising your crews maturity, from boarding to following the operating model. The result is a steady stream of AI-enabled products or services, all resilient, safe and compliant.'
       [params.projects.items.featured]
         name = 'Read more'
-        link = 'https://method.dbj.org/'
+        link = '/services/enablement/'
     [[params.projects.items]]
       title = 'Preservation'
       content = 'Every mature organization, reaches the point when business value it encapsulates is more valuable than software it has built or uses. Your old systems hold years of business knowledge. We enable your teams to take it out and keep it safe before anything is replaced, so modernisation does not throw it away with the old code.'
