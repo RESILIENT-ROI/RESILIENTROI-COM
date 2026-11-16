@@ -114,7 +114,7 @@ copyright = '&copy; Resilient ROI Ltd. | London, UK'
       content = 'Organizations Key Performance Indicator is the sum of capabilities and maturities of its people. That is the key, for adopters, to enter the new operating model and mitigate the risks at the presence of the AI storm. They learn to decide where their organisation stands today, and what it takes to reach the organization level, where work at AI speeds can safely start. The ROI follows.'
       [params.projects.items.featured]
         name = 'Read more'
-        link = 'https://method.dbj.org/cmm/index.html'
+        link = '/services/onboarding/'
     [[params.projects.items]]
       title = 'State of the Industry'
       content = 'Most customers suffer the technical debt. And they quickly spot where Resilient ROI earn their money. Not by demanding poor engineers to clear every debt first, but by telling business leaders which debts they can live with, and for how long, which one kills the AI investment, and what it will actually cost to service the rest of the company landscape. — Dusan Jovanovic, EA, Founder'
