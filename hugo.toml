@@ -108,7 +108,7 @@ copyright = '&copy; Resilient ROI Ltd. | London, UK'
       content = 'For architecture practices developing a method based on ours. Only the parts of the DBJ Method they need, one chapter at a time. We encapsulated TOGAF so that any specific role distant to architecture sees benefits, not confusion.'
       [params.projects.items.featured]
         name = 'Read more'
-        link = 'https://guide.dbj.org/'
+        link = '/services/building/'
     [[params.projects.items]]
       title = 'Onboarding'
       content = 'Organizations Key Performance Indicator is the sum of capabilities and maturities of its people. That is the key, for adopters, to enter the new operating model and mitigate the risks at the presence of the AI storm. They learn to decide where their organisation stands today, and what it takes to reach the organization level, where work at AI speeds can safely start. The ROI follows.'
