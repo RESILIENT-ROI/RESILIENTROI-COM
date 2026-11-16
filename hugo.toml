@@ -102,7 +102,7 @@ copyright = '&copy; Resilient ROI Ltd. | London, UK'
       content = 'Every mature organization, reaches the point when business value it encapsulates is more valuable than software it has built or uses. Your old systems hold years of business knowledge. We enable your teams to take it out and keep it safe before anything is replaced, so modernisation does not throw it away with the old code.'
       [params.projects.items.featured]
         name = 'Read more'
-        link = 'https://iceberg.dbj.org/kb/technical-debt/'
+        link = '/services/preservation/'
     [[params.projects.items]]
       title = 'Building'
       content = 'For architecture practices developing a method based on ours. Only the parts of the DBJ Method they need, one chapter at a time. We encapsulated TOGAF so that any specific role distant to architecture sees benefits, not confusion.'
