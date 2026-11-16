@@ -126,6 +126,13 @@ def main():
         tags = [html.unescape(c.text.strip()) for c in item.findall("category") if c.text]
 
         os.makedirs(bundle)
+        enc = item.find("enclosure")
+        cover = enc.get("url") if enc is not None and "image" in (enc.get("type") or "image") else ""
+        if not cover:
+            mc = item.find("media:content", NS)
+            cover = mc.get("url") if mc is not None else ""
+        if cover:  # featured image at the top of the post, stored locally
+            body = f'<p><img src="{html.escape(cover)}" alt="{html.escape(title)}"></p>\n' + body
         body = localise_images(body, bundle)
         if to_md:
             body = to_md(body, heading_style="ATX", bullets="-").strip()
