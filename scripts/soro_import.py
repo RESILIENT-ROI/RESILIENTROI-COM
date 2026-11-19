@@ -62,24 +62,32 @@ def existing_guids():
     return guids
 
 
+def localise_one_image(src, bundle):
+    """Download a single image URL into the bundle; return its local filename."""
+    path = urllib.parse.urlparse(src).path
+    ext = os.path.splitext(path)[1].lower()
+    if ext not in {".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg", ".avif"}:
+        ext = ".jpg"
+    name = "img-" + hashlib.sha1(src.encode()).hexdigest()[:10] + ext
+    try:
+        data = fetch(src)
+    except Exception as e:
+        print(f"warn: image {src}: {e}", file=sys.stderr)
+        return None
+    with open(os.path.join(bundle, name), "wb") as f:
+        f.write(data)
+    return name
+
+
 def localise_images(body_html, bundle):
     """Download <img> sources into the bundle and rewrite them to local names."""
     def repl(m):
         src = html.unescape(m.group(2))
         if not src.startswith("http"):
             return m.group(0)
-        path = urllib.parse.urlparse(src).path
-        ext = os.path.splitext(path)[1].lower()
-        if ext not in {".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg", ".avif"}:
-            ext = ".jpg"
-        name = "img-" + hashlib.sha1(src.encode()).hexdigest()[:10] + ext
-        try:
-            data = fetch(src)
-        except Exception as e:  # keep remote URL if download fails
-            print(f"warn: image {src}: {e}", file=sys.stderr)
+        name = localise_one_image(src, bundle)
+        if not name:  # keep remote URL if download fails
             return m.group(0)
-        with open(os.path.join(bundle, name), "wb") as f:
-            f.write(data)
         return f"{m.group(1)}{name}{m.group(3)}"
 
     return re.sub(r'(<img\b[^>]*?\bsrc=["\'])([^"\']+)(["\'])', repl, body_html, flags=re.I)
@@ -131,8 +139,10 @@ def main():
         if not cover:
             mc = item.find("media:content", NS)
             cover = mc.get("url") if mc is not None else ""
-        if cover:  # featured image at the top of the post, stored locally
-            body = f'<p><img src="{html.escape(cover)}" alt="{html.escape(title)}"></p>\n' + body
+        # featured image: stored locally and set via front matter `image`, not
+        # inlined in the body (the theme already renders it above the article
+        # on single pages and in the card on list pages)
+        cover_name = localise_one_image(cover, bundle) if cover else None
         body = localise_images(body, bundle)
         if to_md:
             body = to_md(body, heading_style="ATX", bullets="-").strip()
@@ -144,6 +154,7 @@ def main():
             f"description: {yq(summary)}",
             "tags: [" + ", ".join(yq(t) for t in tags) + "]",
             f"author: {yq(a.author)}",
+            f"image: {yq('/posts/' + slug + '/' + cover_name)}" if cover_name else None,
             "version: 0.1",
             f"soro_guid: {yq(guid)}",
             "---",

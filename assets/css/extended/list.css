@@ -1,0 +1,6 @@
+/* Posts (/posts/) always open with the featured image inline; the theme's
+   card-header already shows it styled via front matter `image`, so hide the
+   duplicate, unstyled copy that leaks into the auto-generated card summary. */
+#list-page .card-text img {
+    display: none;
+}

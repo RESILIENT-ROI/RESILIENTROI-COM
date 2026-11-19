@@ -12,19 +12,24 @@ copyright = '&copy; Resilient ROI Ltd. | London, UK'
   unsafe = true
 
 [[menu.main]]
+  name = 'Posts'
+  url = '/posts/'
+  weight = 1
+
+[[menu.main]]
   name = 'DBJ Method'
   url = 'https://method.dbj.org/'
-  weight = 1
+  weight = 2
 
 [[menu.main]]
   name = 'Guide'
   url = 'https://guide.dbj.org/'
-  weight = 2
+  weight = 3
 
 [[menu.main]]
   name = 'Iceberg'
   url = 'https://iceberg.dbj.org/'
-  weight = 3
+  weight = 4
 
 [params]
   title = 'Resilient ROI'
