@@ -1,3 +1,11 @@
+#hero .content {
+  text-align: center;
+}
+
+#hero .content > .row {
+  justify-content: center;
+}
+
 #projects .card:has(.card-img-top[src="/iceberg-grey.png"]) {
   display: flex;
   flex-direction: column;

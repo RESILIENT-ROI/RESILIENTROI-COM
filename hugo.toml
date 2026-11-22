@@ -69,16 +69,16 @@ copyright = '&copy; Resilient ROI Ltd. | London, UK'
       disableAbout = true
       disableExperience = true
       disableEducation = true
-      disableProjects = false
+      disableProjects = true
       disableAchievements = true
-      disableContact = false
+      disableContact = true
 
   [params.hero]
     enable = true
     intro = ' '
     title = 'Resilient ROI'
     subtitle = ''
-    content = '''Work is measured by what it returns.<br>We train the whole organisation to cruise at the AI speed.'''
+    content = '''Work is measured by what it returns.<br>Measure AI for years to come.'''
     image = '/lady_architect_whiteboard.png'
     [params.hero.button]
       enable = true
@@ -115,11 +115,6 @@ copyright = '&copy; Resilient ROI Ltd. | London, UK'
       [params.projects.items.featured]
         name = 'Read more'
         link = 'https://method.dbj.org/cmm/index.html'
-    [[params.projects.items]]
-      title = 'State of the Industry'
-      content = 'Most customers suffer the technical debt. And they quickly spot where Resilient ROI earn their money. Not by demanding poor engineers to clear every debt first, but by telling business leaders which debts they can live with, and for how long, which one kills the AI investment, and what it will actually cost to service the rest of the company landscape. — Dusan Jovanovic, EA, Founder'
-      image = '/iceberg-grey.png'
-
   [params.contact]
     enable = true
     title = 'Contact'
