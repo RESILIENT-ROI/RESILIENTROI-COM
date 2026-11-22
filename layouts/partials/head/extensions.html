@@ -10,3 +10,6 @@
 {{ with resources.Get "css/extended/header.css" }}
 <link rel="stylesheet" href="{{ .RelPermalink }}" media="all">
 {{ end }}
+{{ with resources.Get "css/extended/footer.css" }}
+<link rel="stylesheet" href="{{ .RelPermalink }}" media="all">
+{{ end }}

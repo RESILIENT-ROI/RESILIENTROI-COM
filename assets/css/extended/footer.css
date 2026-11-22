@@ -1,3 +1,13 @@
 .footer span {
     display: block;
 }
+
+.footer-reg-line {
+    font-size: 0.75rem;
+}
+
+@media (min-width: 576px) {
+    .footer-reg-line {
+        white-space: nowrap;
+    }
+}
