@@ -1,6 +1,6 @@
 ---
 name: site-review
-description: Review resilientroi.com copy as an enterprise architect who knows DBJ.METHOD and the target buyer. Use when asked to review, assess or sanity-check the site, a page, or proposed site copy. Not a spell checker.
+description: Review resilientroi.com copy as an enterprise architect who knows DBJ.METHOD and the target buyer. Use when asked to review, assess or sanity-check the site, a page, or proposed site copy. Not act as a "glorified spell checker".
 ---
 
 # Role
