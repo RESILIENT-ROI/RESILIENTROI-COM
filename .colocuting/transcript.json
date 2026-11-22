@@ -5,5 +5,9 @@
     "message": [
       "human:MUH >>> You never tried o you just had enough of colocutin (laugh)"
     ]
+  },
+  {
+    "when": "2026-11-22T20:46:18Z",
+   "colocutor":"human:DBJ","message":["Kanban v_kanban.md items 001, 003-007 done; 002 left tbd per your ruling (no evidence to add yet).","001: both copyright strings in hugo.toml now say Luton, UK.","003-006: apostrophe, comma, US->UK spelling fixed; two awkward lines reworded keeping nautical voice.","007: checked raw HTML on resilientroi.com directly -- no front matter or template leak, just the normal Hugo generator meta tag.","Committed locally, not yet pushed."]
   }
 ]

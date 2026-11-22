@@ -2,7 +2,7 @@ baseURL = 'https://resilientroi.com/'
 languageCode = 'en-gb'
 title = 'Resilient ROI'
 theme = 'hugo-profile'
-copyright = '&copy; Resilient ROI Ltd. | London, UK'
+copyright = '&copy; Resilient ROI Ltd. | Luton, UK'
 
 [outputs]
   home = ['HTML', 'RSS', 'JSON']
@@ -93,13 +93,13 @@ copyright = '&copy; Resilient ROI Ltd. | London, UK'
     title = 'We Navigate'
     [[params.projects.items]]
       title = 'Enablement'
-      content = 'Raising your crews maturity, from boarding to following the operating model. The result is a steady stream of AI-enabled products or services, all resilient, safe and compliant.'
+      content = "Raising your crew's maturity, from boarding to sailing the operating model. The result is a steady stream of AI-enabled products or services, all resilient, safe and compliant."
       [params.projects.items.featured]
         name = 'Read more'
         link = 'https://method.dbj.org/'
     [[params.projects.items]]
       title = 'Preservation'
-      content = 'Every mature organization, reaches the point when business value it encapsulates is more valuable than software it has built or uses. Your old systems hold years of business knowledge. We enable your teams to take it out and keep it safe before anything is replaced, so modernisation does not throw it away with the old code.'
+      content = 'Every mature organisation reaches the point when business value it encapsulates is more valuable than software it has built or uses. Your old systems hold years of business knowledge. We enable your teams to take it out and keep it safe before anything is replaced, so modernisation does not throw it away with the old code.'
       [params.projects.items.featured]
         name = 'Read more'
         link = 'https://iceberg.dbj.org/kb/technical-debt/'
@@ -111,7 +111,7 @@ copyright = '&copy; Resilient ROI Ltd. | London, UK'
         link = 'https://guide.dbj.org/'
     [[params.projects.items]]
       title = 'Onboarding'
-      content = 'Organizations Key Performance Indicator is the sum of capabilities and maturities of its people. That is the key, for adopters, to enter the new operating model and mitigate the risks at the presence of the AI storm. They learn to decide where their organisation stands today, and what it takes to reach the organization level, where work at AI speeds can safely start. The ROI follows.'
+      content = "An organisation's Key Performance Indicator is the sum of capabilities and maturities of its people. That is the key, for adopters, to enter the new operating model and manage the risks the AI storm brings. They learn to decide where their organisation stands today, and what it takes to reach the organisational level, where work at AI speeds can safely start. The ROI follows."
       [params.projects.items.featured]
         name = 'Read more'
         link = 'https://method.dbj.org/cmm/index.html'
@@ -147,4 +147,4 @@ The [DBJ Method](https://method.dbj.org/) is not the book of magic.
       content='With us, no project floats outside the [BPT](https://method.dbj.org/bpt/index.html) loop.'
 
   [params.terms]
-    copyright = 'All rights reserved. Resilient ROI Ltd, London, UK.'
+    copyright = 'All rights reserved. Resilient ROI Ltd, Luton, UK.'
