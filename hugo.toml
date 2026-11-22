@@ -12,6 +12,11 @@ copyright = '&copy; Resilient ROI Ltd. | Luton, UK'
   unsafe = true
 
 [[menu.main]]
+  name = 'Team'
+  url = '/team/'
+  weight = -1
+
+[[menu.main]]
   name = 'DBJ Method'
   url = 'https://method.dbj.org/'
   weight = 1

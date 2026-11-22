@@ -8,13 +8,18 @@
     <h1 class="text-center mb-5">{{ .Title }}</h1>
     <div class="row justify-content-center">
       {{ range .Params.members }}
-      <div class="col-sm-12 col-md-6 text-center py-3">
-        {{ if .image }}
-        <img src="{{ .image }}" alt="{{ .name }}" class="img-thumbnail rounded-circle mb-3" width="160" height="160">
-        {{ end }}
-        <h3>{{ .name }}</h3>
-        <h5 class="text-secondary">{{ .role }}</h5>
-        {{ with .bio }}<p class="mt-2">{{ . }}</p>{{ end }}
+      <div class="col-sm-12 col-md-6 py-3">
+        <div class="team-card text-center p-4">
+          {{ if .image }}
+          <img src="{{ .image }}" alt="{{ .name }}" class="img-thumbnail rounded-circle mb-3" width="160" height="160">
+          {{ else }}
+          <div class="team-placeholder img-thumbnail rounded-circle mb-3 mx-auto"></div>
+          {{ end }}
+          <h3>{{ .name }}</h3>
+          <h5 class="text-secondary">{{ .role }}</h5>
+          {{ with .email }}<p class="mt-1"><a href="mailto:{{ . }}">{{ . }}</a></p>{{ end }}
+          {{ with .bio }}<p class="mt-2">{{ . }}</p>{{ end }}
+        </div>
       </div>
       {{ end }}
     </div>

@@ -1,0 +1,10 @@
+.team-card {
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+}
+
+.team-placeholder {
+    width: 160px;
+    height: 160px;
+    background-color: var(--background-color);
+}
