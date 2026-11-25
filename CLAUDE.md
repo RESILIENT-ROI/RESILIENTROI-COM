@@ -1,5 +1,5 @@
 ---
-version: 0.4
+version: 0.5
 ---
 
 DBJ is chief architect and final authority on method.dbj.org
@@ -15,6 +15,17 @@ DBJ is chief architect and final authority on method.dbj.org
          1. pay special attention to Conversation protocol, in there
 
 If SHARED_CLAUDE.md is not found warn the user. Probably that repo is not available on the current machine.
+
+## Skills Sync With DBJ-AI-RUNTIME
+
+1. Canonical copies of shared skills live in DBJ-AI-RUNTIME:
+   1. On Windows
+      1. `G:\REPOS\DBJ-AI-RUNTIME\shared_claude_skills\<skill-name>\SKILL.md`
+   2. On Linux and macOS
+      1. `~/REPOS/DBJ-AI-RUNTIME/shared_claude_skills/<skill-name>/SKILL.md`
+2. These are plain files, not a Claude Code plugin. There is no automatic sync.
+3. **Pull (refresh this repo from DBJ-AI-RUNTIME):** at the start of a session, or when asked to check for skill updates, for each skill folder already present under `.claude/skills/` in **this** repo, diff it against the matching folder in `shared_claude_skills/` (if DBJ-AI-RUNTIME is available on this machine) and tell the user if the canonical copy has changed. Never pull in a skill that does not already have a folder here — this refreshes existing skills, it does not add new ones. Only copy an updated file over when the user confirms.
+4. **Push (publish an improved skill from this repo back to DBJ-AI-RUNTIME):** when the user develops or improves a skill here and asks to "refresh" or "publish" it to DBJ-AI-RUNTIME, copy this repo's `.claude/skills/<skill-name>/` over the matching `shared_claude_skills/<skill-name>/` folder in DBJ-AI-RUNTIME (creating the folder there if the skill is new to the shared repo), then commit and push DBJ-AI-RUNTIME so other repos can pull it. Confirm the diff with the user before overwriting the canonical copy.
 
 ## What This Repo Is
 
