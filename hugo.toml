@@ -83,7 +83,7 @@ copyright = '&copy; Resilient ROI Ltd. | Luton, UK'
     intro = ' '
     title = 'Resilient ROI'
     subtitle = ''
-    content = '''Work is measured by what it returns. Measure AI for years to come.<br>[info@resilientroi.com](mailto:info@resilientroi.com)'''
+    content = '''Work is measured by what it returns. For years to come.<br>[info@resilientroi.com](mailto:info@resilientroi.com?subject=Coming%20from%20a%20web%20site)'''
     image = '/lady_architect_whiteboard.png'
     [params.hero.button]
       enable = true
