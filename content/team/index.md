@@ -8,7 +8,9 @@ members:
     role: "CEO"
     email: "muh@resilientroi.com"
     bio: |
-      Software engineer and systems architect, with experience delivering technology solutions from startups to large enterprises, leading engineering teams across the UK, India and USA.
+      Executive Director and engineering lead at J.P. Morgan since 2018. Before that, Executive Director at Goldman Sachs (2010–2018), and seven years at Bloomberg leading the mobile engineering behind Bloomberg's apps for BlackBerry, iPhone and Nokia.
+
+      Over 25 years building and leading software engineering teams across investment banking and financial markets — J.P. Morgan, Goldman Sachs, Bloomberg, Credit Suisse First Boston, Barclays Capital — in the UK, India and USA.
 
       My focus: building diverse, collaborative engineering teams; designing scalable, resilient platforms for enterprise needs; and hands-on development across Java, C#, and web and mobile applications.
 
@@ -23,6 +25,8 @@ members:
       After 30+ years in commercial IT delivery, I concluded that the operating model decides everything — not the technology choice, not the platform, not the vendor. That conclusion became the DBJ Method.
 
       It encapsulates TOGAF into a form non-architects can actually use: a simplified capability maturity assessment, paired with a Business–Product–Technology loop that keeps the three honest with each other. Built for organisations under pressure to adopt AI, who need to know what they can actually deliver before they commit to it.
+
+      The DBJ Method is openly licensed (CC BY SA 4.0); Resilient ROI operates under it as its foundational operating model — see the [DBJ Method IP note](/dbj_method_ip/) for the detail.
 
       Enterprise Architect and Programme Director. [TOGAF-certified](https://dbj.org/wp-content/uploads/2021/02/DBJ-48359-TOGAF%C2%AE-9-Certificate.png) since 2011 — among the earliest certified cohort globally. Banking, energy trading, life sciences, cloud, IP.
 
