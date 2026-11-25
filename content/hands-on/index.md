@@ -1,5 +1,5 @@
 ---
-title: "Hands-on"
+title: "Hands-On Presence"
 description: "We work alongside your teams to set up, run and monitor a BPT instance or a Product Factory."
 layout: "legal"
 version: 0.1

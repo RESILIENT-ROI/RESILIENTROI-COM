@@ -7,7 +7,7 @@ version: 0.1
 
 Five courses, lecture and presentation based. No live instance, no tooling — just the model, so your people understand it before they run it.
 
-Large organisations, where many people and roles are involved, typically start here. Smaller teams can often skip straight to [Hands-on](/hands-on/) and pick up what they need as they go.
+Large organisations, where many people and roles are involved, typically start here. Smaller teams can often skip straight to [Hands-On Presence](/hands-on/) and pick up what they need as they go.
 
 ## 1. [DBJ Method](https://method.dbj.org/)
 
