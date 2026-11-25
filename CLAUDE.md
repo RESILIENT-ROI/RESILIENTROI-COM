@@ -53,6 +53,10 @@ Resilient ROI Ltd manages projects for customers, by following the DBJ Method (h
 
 In `.colocuting/` you are **RROI_SITE**. Write to the transcript only through `.colocuting/to`.
 
+## Skill Reports
+
+When a skill produces a findings report (e.g. `/buyer-fit`, `/method-fit`), save it to `.colocuting/skill_reports/` as `YYYY-MM-DD-HH-MM-<skill-name>.md`, timestamped to when the report was produced.
+
 ## Hugo Conventions
 
 - **Theme:** hugo-profile (`gurusabarish/hugo-profile`), a git submodule at `themes/hugo-profile`. Do not edit files under `themes/`.
