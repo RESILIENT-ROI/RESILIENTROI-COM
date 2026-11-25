@@ -97,29 +97,17 @@ copyright = '&copy; Resilient ROI Ltd. | Luton, UK'
     enable = true
     title = 'We Navigate'
     [[params.projects.items]]
-      title = 'Enablement'
-      content = "Raising your crew's maturity, from boarding to sailing the operating model. The result is a steady stream of AI-enabled products or services, all resilient, safe and compliant."
+      title = 'Knowledge'
+      content = "Courses in DBJ Taxonomy, CMM, ADM and BPT — the vocabulary, maturity model, decision wheel and operating loop behind the method. For organisations whose people need to understand the model before they run it."
       [params.projects.items.featured]
-        name = 'Read more'
-        link = 'https://method.dbj.org/'
+        name = 'See the courses'
+        link = '/knowledge/'
     [[params.projects.items]]
-      title = 'Preservation'
-      content = 'Every mature organisation reaches the point when business value it encapsulates is more valuable than software it has built or uses. Your old systems hold years of business knowledge. We enable your teams to take it out and keep it safe before anything is replaced, so modernisation does not throw it away with the old code.'
+      title = 'Hands-on'
+      content = "We work inside your own teams to set up, run and monitor a BPT instance, or a Factory of several, on your premises, using our own BPTAPP tool."
       [params.projects.items.featured]
-        name = 'Read more'
-        link = 'https://iceberg.dbj.org/kb/technical-debt/'
-    [[params.projects.items]]
-      title = 'Building'
-      content = 'For architecture practices developing a method based on ours. Only the parts of the DBJ Method they need, one chapter at a time. We encapsulated TOGAF so that any specific role distant to architecture sees benefits, not confusion.'
-      [params.projects.items.featured]
-        name = 'Read more'
-        link = 'https://guide.dbj.org/'
-    [[params.projects.items]]
-      title = 'Onboarding'
-      content = "An organisation's Key Performance Indicator is the sum of capabilities and maturities of its people. That is the key, for adopters, to enter the new operating model and manage the risks the AI storm brings. They learn to decide where their organisation stands today, and what it takes to reach the organisational level, where work at AI speeds can safely start. The ROI follows."
-      [params.projects.items.featured]
-        name = 'Read more'
-        link = 'https://method.dbj.org/cmm/index.html'
+        name = 'See what we set up'
+        link = '/hands-on/'
   [params.contact]
     enable = true
     title = 'Contact'
