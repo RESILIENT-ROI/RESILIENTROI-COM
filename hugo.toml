@@ -22,11 +22,6 @@ copyright = '&copy; Resilient ROI Ltd. | Luton, UK'
   weight = 1
 
 [[menu.main]]
-  name = 'Guide'
-  url = 'https://guide.dbj.org/'
-  weight = 2
-
-[[menu.main]]
   name = 'Iceberg'
   url = 'https://iceberg.dbj.org/'
   weight = 3
