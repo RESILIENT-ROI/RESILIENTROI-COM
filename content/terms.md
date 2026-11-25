@@ -5,7 +5,7 @@ layout: "legal"
 version: 0.1
 ---
 
-This website is published by Resilient ROI Limited (company no. 17415109, registered office 36 Ludlow Avenue, Luton, England, LU1 3RW).
+This website is published by Resilient ROI Ltd (company no. 17415109, registered office 36 Ludlow Avenue, Luton, England, LU1 3RW).
 
 ## Use of this site
 
@@ -17,7 +17,7 @@ This site links to external resources, including the [DBJ Method](https://method
 
 ## Intellectual property
 
-Site content is &copy; Resilient ROI Limited unless stated otherwise. The site theme, [Hugo Profile](https://github.com/gurusabarish/hugo-profile), is used under its own licence.
+Site content is &copy; Resilient ROI Ltd unless stated otherwise. The site theme, [Hugo Profile](https://github.com/gurusabarish/hugo-profile), is used under its own licence.
 
 ## Governing law
 

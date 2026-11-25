@@ -83,7 +83,7 @@ copyright = '&copy; Resilient ROI Ltd. | Luton, UK'
     intro = ' '
     title = 'Resilient ROI'
     subtitle = ''
-    content = '''Work is measured by what it returns. For years to come.<br>[info@resilientroi.com](mailto:info@resilientroi.com?subject=Coming%20from%20a%20web%20site)'''
+    content = '''To Compete In AI Race, Requires Racing at AI Speed<br>[info@resilientroi.com](mailto:info@resilientroi.com?subject=Coming%20from%20a%20web%20site)'''
     image = '/lady_architect_whiteboard.png'
     [params.hero.button]
       enable = true
@@ -98,7 +98,7 @@ copyright = '&copy; Resilient ROI Ltd. | Luton, UK'
     title = 'We Navigate'
     [[params.projects.items]]
       title = 'Knowledge'
-      content = "Courses in DBJ Taxonomy, CMM, ADM and BPT — the vocabulary, maturity model, decision wheel and operating loop behind the method. For organisations whose people need to understand the model before they run it."
+      content = "Courses in the vocabulary, maturity model, decision wheel and operating loop behind the method. For organisations whose people need to understand the model before they run it."
       [params.projects.items.featured]
         name = 'See the courses'
         link = '/knowledge/'

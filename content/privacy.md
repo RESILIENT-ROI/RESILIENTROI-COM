@@ -1,11 +1,11 @@
 ---
 title: "Privacy Policy"
-description: "How Resilient ROI Limited handles personal data."
+description: "How Resilient ROI Ltd handles personal data."
 layout: "legal"
 version: 0.1
 ---
 
-Resilient ROI Limited (company no. 17415109, registered office 36 Ludlow Avenue, Luton, England, LU1 3RW) is the data controller for this site.
+Resilient ROI Ltd (company no. 17415109, registered office 36 Ludlow Avenue, Luton, England, LU1 3RW) is the data controller for this site.
 
 ## What we collect
 
