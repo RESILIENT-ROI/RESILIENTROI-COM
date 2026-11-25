@@ -99,7 +99,7 @@ copyright = '&copy; Resilient ROI Ltd. | Luton, UK'
         link = '/knowledge/'
     [[params.projects.items]]
       title = 'Hands-On Presence'
-      content = "We work alongside your own teams to set up, run and monitor a BPT instance, or a Product Factory of several, on your premises, using our own BPTAPP tool."
+      content = "We work alongside your own teams to set up, run and monitor a BPT instance, or a Product Factory of several, on your premises, using BPTAPP — our own tool for it, currently travelling on our own in-house BPT instance."
       [params.projects.items.featured]
         name = 'See what we set up'
         link = '/hands-on/'
