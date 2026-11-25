@@ -78,7 +78,7 @@ copyright = '&copy; Resilient ROI Ltd. | Luton, UK'
     intro = ' '
     title = 'Resilient ROI'
     subtitle = ''
-    content = '''To Compete In AI Race, Requires Racing at AI Speed<br>[info@resilientroi.com](mailto:info@resilientroi.com?subject=Coming%20from%20a%20web%20site)'''
+    content = '''Organisation maturity must precede AI maturity.<br>[info@resilientroi.com](mailto:info@resilientroi.com?subject=Coming%20from%20a%20web%20site)'''
     image = '/lady_architect_whiteboard.png'
     [params.hero.button]
       enable = true

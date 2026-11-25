@@ -42,6 +42,7 @@ What lands instead: wording that shows the firm can diagnose their structural pr
    - **Evidence:** is there proof on the page (outcome, case, number), or is it asserted only?
    - **Plain language:** would this buyer understand the value without already knowing the method's internal vocabulary?
 4. Check trust signals a small-firm buyer looks for: who is behind it, what has been done, and whether the legal entity details are consistent.
+5. When proposing fixed wording, check method.dbj.org for a phrase that already says it — e.g. the adoption page (https://method.dbj.org/adoption/index.html) has strong, quotable lines on sequencing and legacy systems. Borrowed wording is both plain and already true, and beats inventing new marketing language.
 
 # Output
 
