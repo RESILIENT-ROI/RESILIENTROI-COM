@@ -4,12 +4,10 @@ date: 2026-11-20
 description: "Learn how to capture legacy rules before AI delivery scales, protecting compliance, operational resilience and business value embedded in ageing systems."
 tags: []
 author: "Resilient ROI"
+image: "/posts/how-to-capture-legacy-rules-before-ai-scales/img-8329d9d0e9.webp"
 version: 0.1
 soro_guid: "1db9409c-f1be-46d2-8207-07f71914ceb4"
 ---
-
-![How to Capture Legacy Rules Before AI Scales](img-8329d9d0e9.webp)
-
 
 A claims platform rejects a case that appears valid. A pricing engine applies an exception no policy document mentions. A month\-end process requires one person to run three reports in a particular order before finance will trust the result. These are not merely quirks of an ageing estate. They are business rules, and organisations that do not know **how to capture legacy rules** will eventually lose control of them \- often during a modernisation or AI initiative.
 

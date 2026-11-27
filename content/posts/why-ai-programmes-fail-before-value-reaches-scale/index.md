@@ -4,12 +4,10 @@ date: 2026-11-22
 description: "Why AI programmes fail: weak operating models, lost knowledge and unmanaged architecture constraints prevent value, safety and scale at enterprise scale."
 tags: []
 author: "Resilient ROI"
+image: "/posts/why-ai-programmes-fail-before-value-reaches-scale/img-fbcab1a440.webp"
 version: 0.1
 soro_guid: "6bd4a6c6-73a4-4799-967c-6b19224efc20"
 ---
-
-![Why AI Programmes Fail Before Value Reaches Scale](img-fbcab1a440.webp)
-
 
 A promising pilot is not evidence of an AI capability. It is evidence that a small, protected team can make a model work around the edges of the enterprise. The reason why AI programmes fail is usually exposed later: when the programme meets fragmented data, unclear decision rights, undocumented legacy logic, regulatory obligations and teams that have not been prepared to operate differently.
 

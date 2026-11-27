@@ -17,6 +17,11 @@ copyright = '&copy; Resilient ROI Ltd. | Luton, UK'
   weight = -1
 
 [[menu.main]]
+  name = 'Posts'
+  url = '/posts/'
+  weight = 0
+
+[[menu.main]]
   name = 'DBJ Method'
   url = 'https://method.dbj.org/'
   weight = 1

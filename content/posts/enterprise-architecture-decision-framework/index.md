@@ -4,12 +4,10 @@ date: 2026-11-16
 description: "An enterprise architecture decision framework directs AI investment, protects legacy knowledge and funds change with measurable returns and controlled risk."
 tags: []
 author: "Resilient ROI"
+image: "/posts/enterprise-architecture-decision-framework/img-9b413fdd99.webp"
 version: 0.1
 soro_guid: "af97143d-d5a6-425b-b740-aff7dd81a080"
 ---
-
-![Enterprise Architecture Decision Framework](img-9b413fdd99.webp)
-
 
 AI programmes rarely fail because an organisation lacks ideas. They fail because decisions about platforms, data, technical debt, controls and operating ownership are made separately. An enterprise architecture decision framework gives leaders a disciplined way to make those choices together, before accelerated delivery converts uncertainty into cost, risk and rework.
 

@@ -4,12 +4,10 @@ date: 2026-11-18
 description: "AI governance training helps leaders set accountable controls, protect legacy knowledge and move AI initiatives from urgency to measurable returns safely."
 tags: []
 author: "Resilient ROI"
+image: "/posts/ai-governance-training-that-protects-roi/img-effc2c2b0f.webp"
 version: 0.1
 soro_guid: "ac589a44-7b88-4aae-800b-5480b1730199"
 ---
-
-![AI Governance Training That Protects ROI](img-effc2c2b0f.webp)
-
 
 A generative AI pilot can look successful right up to the point it reaches a regulated process, exposes confidential knowledge, or produces an answer nobody is authorised to approve. AI governance training is not a compliance exercise added after experimentation. It is the operating discipline that lets an organisation move quickly without handing decision rights, risk, and business value to a tool.
 

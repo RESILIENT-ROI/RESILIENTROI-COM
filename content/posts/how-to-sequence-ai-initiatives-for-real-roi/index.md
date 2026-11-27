@@ -4,12 +4,10 @@ date: 2026-11-24
 description: "Learn how to sequence AI initiatives around business value, governance and architecture, so early gains strengthen capability instead of creating risk."
 tags: []
 author: "Resilient ROI"
+image: "/posts/how-to-sequence-ai-initiatives-for-real-roi/img-4c120b8d5c.webp"
 version: 0.1
 soro_guid: "b10007dc-8e97-4426-9b08-799ea9a2bd68"
 ---
-
-![How to Sequence AI Initiatives for Real ROI](img-4c120b8d5c.webp)
-
 
 A queue of AI use cases is not an AI strategy. It is usually a record of who has the loudest mandate, the largest budget, or the most visible frustration. Leaders need to sequence AI initiatives differently: according to the value they can return, the risks they introduce, and the organisational capabilities they leave behind.
 
