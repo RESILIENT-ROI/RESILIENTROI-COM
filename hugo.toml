@@ -39,13 +39,13 @@ copyright = '&copy; Resilient ROI Ltd. | Luton, UK'
   animate = true
 
   [params.color]
-    textColor = '#E7ECF2'
-    secondaryTextColor = '#8CA0B4'
-    textLinkColor = '#E8A33D'
-    backgroundColor = '#0F1620'
-    secondaryBackgroundColor = '#141D2B'
-    primaryColor = '#E8A33D'
-    secondaryColor = '#141D2B'
+    textColor = '#1E2630'
+    secondaryTextColor = '#51607A'
+    textLinkColor = '#B5791F'
+    backgroundColor = '#F4F6F8'
+    secondaryBackgroundColor = '#E7EBEF'
+    primaryColor = '#B5791F'
+    secondaryColor = '#E7EBEF'
     [params.color.darkmode]
       textColor = '#E7ECF2'
       secondaryTextColor = '#8CA0B4'
