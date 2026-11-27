@@ -4,12 +4,10 @@ date: 2026-11-26
 description: "An AI capability roadmap guide for leaders who need faster delivery, sound governance and measurable returns from complex technology estates at scale."
 tags: []
 author: "Resilient ROI"
+image: "/posts/ai-capability-roadmap-guide-for-enterprise-value/img-84ed9d3dbf.webp"
 version: 0.1
 soro_guid: "80093744-335f-4133-9c8a-dc072c3d4f31"
 ---
-
-![AI Capability Roadmap Guide for Enterprise Value](img-84ed9d3dbf.webp)
-
 
 AI does not wait for enterprise architecture to become tidy. Yet an AI capability roadmap guide that starts with tools, models and pilot use cases will usually produce scattered experiments rather than durable business value. For established organisations, the real question is not whether AI can accelerate delivery. It is whether the organisation can direct that acceleration safely, preserve the knowledge that makes its business work, and measure what the investment returns.
 
